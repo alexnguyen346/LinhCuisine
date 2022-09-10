@@ -46,8 +46,8 @@ p {
 }
 
 button.normal{
-	font-size: 25px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 400;
 	padding: 20px 35px;
 	color: #000;
 	background-color: #fff;
@@ -132,7 +132,7 @@ body {
 }
 
 #hero {
-	background-image: url("img/food/bbl1.jpg");
+	background-image: url("img/home/house.jpg");
 	height: 90vh;
 	width: 100%;
 	background-size: cover;
@@ -144,19 +144,28 @@ body {
 	justify-content: center;
 }
 
-#hero h4{
+#hero h2{
 	padding-bottom: 26px;
+	color: #d7d3bf;
+	text-shadow: 2px 2px #5b5b5b;
 }
 
 #hero h1{
-	color: #088178;
+	color: #d7d3bf;
+	text-shadow: 2px 2px #5b5b5b;
+}
+
+#hero p{
+	color: #d7d3bf;
+	text-shadow: 2px 2px #5b5b5b;
 }
 
 #hero button{
 	background-image: url("img/button.png");
 	background-position: 60% 55%;
 	background-color: transparent;
-	color: #088178;
+	color: #d7d3bf;
+	text-shadow: 2px 2px #5b5b5b;
 	border: 0;
 	padding: 25px 150px 25px 150px;
 	background-repeat: no-repeat;
@@ -217,6 +226,10 @@ body {
 
 #product1 {
 	text-align: center;
+}
+
+#product1 .pro img{
+	max-height: 400px;
 }
 
 #product1 .pro-container{
@@ -624,6 +637,119 @@ footer .copyright{
 #prodetails .single-pro-details span{
 	font-size: 25px;
 	line-height: 35px;
+}
+
+#cart table{
+	width:100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+	font-size: 20px;
+}
+
+#cart table img{
+	width: 120px;
+}
+
+#cart table td:nth-child(1){
+	width: 100px;
+	text-align: center
+}
+
+#cart table td:nth-child(2){
+	width: 150px;
+	text-align: center
+}
+
+#cart table td:nth-child(3){
+	width: 250px;
+	text-align: center
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+	width: 150px;
+	text-align: center
+}
+
+#cart table td:nth-child(5) input{
+	width: 70px;
+	padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+	border: 1px solid #e2e9e1;
+	border-left: none;
+	border-right: none;
+}
+
+#cart table thead td{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 18px 0;
+}
+
+#cart table tbody tr td{
+	padding-top: 15px;
+}
+
+#cart table tbody td{
+	font-size: 16px;
+}
+
+#cart-add{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#coupon{
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3{
+	padding-bottom: 15px;
+	font-size: 24px;
+}
+
+#coupon input{
+	padding: 15px 20px;
+	outline: none;
+	width: 60%;
+	margin-right: 10px;
+	border: 1px solid #e2e9e1;
+	font-size: 16px;
+}
+
+#coupon button,
+#subtotal button{
+	background-color: #088178;
+	color: #fff;
+	padding: 15px 20px;
+}
+
+#subtotal{
+	width: 50%;
+	margin-bottom: 30px;
+	border: 1px solid #e2e9e1;
+	padding: 30px;
+}
+
+#subtotal table{
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#subtotal table td{
+	width: 50%;
+	border: 1px solid #e2e9e1;
+	padding: 10px;
+	font-size: 16px;
 }
 
 @media (max-width: 900px){
