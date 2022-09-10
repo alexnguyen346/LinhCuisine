@@ -1,11 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -78,7 +79,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 35px 140px;
+	padding: 25px 140px;
 	background:#E3E6F3;
 	box-shadow: 0 9px 26px rgba(0, 0, 0, 0.06);
 	z-index: 999;
@@ -132,7 +133,7 @@ body {
 }
 
 #hero {
-	background-image: url("img/home/house.jpg");
+	background-image: url("img/home/cook.jpg");
 	height: 90vh;
 	width: 100%;
 	background-size: cover;
@@ -144,28 +145,27 @@ body {
 	justify-content: center;
 }
 
-#hero h2{
+#hero h4{
 	padding-bottom: 26px;
-	color: #d7d3bf;
-	text-shadow: 2px 2px #5b5b5b;
 }
 
 #hero h1{
-	color: #d7d3bf;
-	text-shadow: 2px 2px #5b5b5b;
+	color: #088178;
 }
 
-#hero p{
-	color: #d7d3bf;
-	text-shadow: 2px 2px #5b5b5b;
+#hero h2, 
+#hero h1, 
+#hero p,
+#hero button{
+	position: relative;
+	left: 300px;
 }
 
 #hero button{
 	background-image: url("img/button.png");
 	background-position: 60% 55%;
 	background-color: transparent;
-	color: #d7d3bf;
-	text-shadow: 2px 2px #5b5b5b;
+	color: #088178;
 	border: 0;
 	padding: 25px 150px 25px 150px;
 	background-repeat: no-repeat;
@@ -228,10 +228,6 @@ body {
 	text-align: center;
 }
 
-#product1 .pro img{
-	max-height: 400px;
-}
-
 #product1 .pro-container{
 	display: flex;
 	justify-content: space-between;
@@ -258,8 +254,9 @@ body {
 
 
 #product1 .pro img{
-	width: 100%;
+	max-width: 380px;
 	border-radius: 20px;
+	max-height: 350px;
 }
 
 #product1 .pro .des{
@@ -310,7 +307,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-image: url("img/banner/b2.jpg");
+	background-image:     
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("img/banner/banner1.jpg");
 	width: 100%;
 	height:40vh;
 	background-size: cover;
@@ -329,7 +330,7 @@ body {
 }
 
 #banner h2 span{
-	color: #ef3636;
+	color: #ec544e;
 
 }
 
@@ -349,7 +350,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	background-image: url("img/banner/b17.jpg");
+	background-image: 
+	  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+	url("img/banner/banner2.jpg");
 	min-width: 775px;
 	height:50vh;
 	background-size: cover;
@@ -358,7 +364,12 @@ body {
 }
 
 #sm-banner .banner-box2{
-	background-image: url("img/banner/b10.jpg");
+	background-image: 
+		linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("img/banner/banner3.jpg");
 }
 
 #sm-banner h4{
@@ -397,7 +408,11 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	background-image: url("img/banner/b7.jpg");
+	background-image: 
+		  linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url("img/banner/banner4.jpg");
 	min-width: 30%;
 	height: 30vh;
 	background-size: cover;
@@ -407,11 +422,19 @@ body {
 }
 
 #banner3 .banner-box2{
-	background-image: url("img/banner/b4.jpg");
+	background-image: 
+	  linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url("img/banner/banner5.jpg");
 }
 
 #banner3 .banner-box3{
-	background-image: url("img/banner/b18.jpg");
+	background-image: 
+	  linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ), url("img/banner/banner6.jpg");
 }
 
 #banner3 h2{
