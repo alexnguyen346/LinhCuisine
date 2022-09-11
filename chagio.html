@@ -19,7 +19,7 @@
 				<li><a class ="active" href="shop.html">Shop</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a id="lg-bag" href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+				<li class="basket"><a id="lg-bag" href="cart.html"><i class="fa-solid fa-basket-shopping"></i> <span>document.querySelector('.basket span').textContent</span></a></li>
 			</ul>
 		</div>
 		<div id="mobile">
@@ -49,16 +49,15 @@
 		<div class="single-pro-details">
 			<h6>Home / Appetizers / </h6>
 			<h4>Bánh Bột Lọc 100pk</h4>
-			<h2>$90.00</h2>
-			<select>
-				<option>Select Quantity</option>
-				<option>25 count</option>
-				<option>50 count</option>
-				<option>100 count</option>
-				<option>200 count</option>
+			<h2>$<span id="price">25</span>.00</h2>
+			<select id="count" onchange="PriceChange()"> 
+				<option id="25" value="25">25 count</option>
+				<option id="50" value="40">50 count</option>
+				<option id="100" value="80">100 count</option>
+				<option id="200" value="160">200 count</option>
 			</select>
 			<input type="number" value="1">
-			<button class="normal">Add To Cart</button>
+			<button class="normal add-cart cart2">Add To Cart</button>
 			<h4>Item Details</h4>
 			<span>Banh Bot Loc is a small, chewy, 
 			translucent pork and shrimp dumpling, 

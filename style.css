@@ -634,6 +634,10 @@ footer .copyright{
 	font-size: 45px;
 }
 
+#prodetails .single-pro-details h2 span{
+	font-size: 45px;
+}
+
 #prodetails .single-pro-details select{
 	display: block;
 	padding: 10px 20px;
