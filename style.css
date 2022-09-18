@@ -237,11 +237,10 @@ body {
 }
 #product1 .pro{
 	width: 23%;
-	min-width: 438px;
+	height: 50%;
 	padding: 18px 21px;
 	border: 2px solid #cce7d0; 
 	border-radius: 44px;
-	cursor: pointer;
 	box-shadow: 35px 35px 52px rgba(0, 0, 0, 0.02);
 	margin: 26px 0;
 	transition: 0.2s ease;
@@ -254,9 +253,9 @@ body {
 
 
 #product1 .pro img{
-	max-width: 380px;
+	max-width: 300px;
 	border-radius: 20px;
-	max-height: 350px;
+	height: 300px;
 }
 
 #product1 .pro .des{
@@ -270,24 +269,34 @@ body {
 }
 
 #product1 .pro .des h5{
-	padding: 12px 0;
+	padding: 8px 0;
 	color: #1a1a1a;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 #product1 .pro .des i{
-	font-size: 21px;
+	font-size: 16px;
 	color: rgb(243, 181, 25);
 }
 
-#product1 .pro .des h4{
-	font-size: 26px;
-	padding-top: 12px;
+#product1 .pro .des h4,
+#product1 .pro .des h4 span{
+	font-size: 20px;
+	padding: 8px 0px;
 	font-weight: 700;
 	color: #088178;
 }
 
-#product1 .pro .cart{
+
+#product1 .pro .des select{
+	display: block;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+}
+
+
+
+#product1 .pro .add-cart{
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
@@ -298,7 +307,11 @@ body {
 	border: 2px solid #cce7d0;
 	position: absolute;
 	bottom: 35px;
-	right: 18px;
+	right: 18px;	
+}
+
+#product1 .pro .add-cart:hover{
+	cursor: pointer;
 }
 
 #banner{

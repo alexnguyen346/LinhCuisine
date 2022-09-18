@@ -14,19 +14,22 @@ if(close){
 	})
 }
 
-function PriceChange(){
-	if(count.selectedIndex == 1){
-		document.getElementById("price").textContent = document.getElementById("50").value;
-	}
-	else if(count.selectedIndex == 2){
-		document.getElementById("price").textContent = document.getElementById("100").value;
-	}
-	else if(count.selectedIndex == 3){
-		document.getElementById("price").textContent = document.getElementById("200").value;
-	}
-	else {
-		document.getElementById("price").textContent = document.getElementById("25").value;
-	}
+var costs = document.querySelectorAll('#price');
+var count = document.querySelectorAll('#count');
+
+function PriceChange(i){
+		if(count[i].selectedIndex == 1){
+			costs[i-1].textcontent = count[i].value;
+		}
+		else if(count[i].selectedIndex == 2){
+			costs[i-1].textcontent = count[i].value;
+		}
+		else if(count[i].selectedIndex == 3){
+			costs[i-1].textcontent = count[i].value;
+		}
+		else {
+			costs[i-1].textcontent = count[i].value;
+		}
 }
 
 let carts = document.querySelectorAll('.add-cart');
@@ -106,5 +109,5 @@ function setItems(product){
 onLoadCartNumbers();
 
 
-const count = document.querySelector('#count');
+
 

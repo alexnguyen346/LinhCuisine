@@ -19,7 +19,7 @@
 				<li><a class ="active" href="shop.html">Shop</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a id="lg-bag" href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+				<li><a id="lg-bag" href="cart.html"><i class="fa-solid fa-basket-shopping"></i> <span>document.querySelector('.basket span').textContent</span></a></li>
 			</ul>
 		</div>
 		<div id="mobile">
@@ -36,10 +36,9 @@
 
 	<section id="product1" class="section-p1">
 		<div class="pro-container">
-			<div class="pro" onclick="window.location.href='banhbotloc.html';">
+			<div class="pro">
 				<img src="img/food/bbl3.jfif" alt="">
 				<div class="des">
-					<span>appetizer</span>
 					<h5>Bánh Bột Lọc</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -48,14 +47,18 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
-					<h4>$25</h4>
+					<h4>$<span class="price price1">25</span>.00</h4> 
+					<select class="count count1" onchange="PriceChange(1)"> 
+						<option value="25">25 count</option>
+						<option value="45">50 count</option>
+						<option value="90">100 count</option>
+						<option value="180">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
-			<div class="pro" onclick="window.location.href='chagio.html';">
+<button class= "add-cart cart2"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
+			<div class="pro">
 				<img src="img/food/chagio.jpg" alt="">
 				<div class="des">
-					<span>appetizer</span>
 					<h5>Chả Giò</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -64,14 +67,20 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 					</div>
-					<h4>$20</h4>
+					<h4>$<span class="price price2">25</span>.00</h4> 
+					<select class="count count2" onchange="PriceChange(2)"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+
+				<button class= "add-cart cart1"><i class="fa-solid fa-cart-shopping cart"></i></button>
 			</div>
 			<div class="pro">
 				<img src="img/food/chaoc.jpg" alt="">
 				<div class="des">
-					<span>appetizer</span>
 					<h5>Chả Ốc</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -81,13 +90,18 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$25</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+				<button class= "add-cart cart1"><i class="fa-solid fa-cart-shopping cart"></i></button>
 			</div>
 			<div class="pro">
 				<img src="img/food/patiso.jpg" alt="">
 				<div class="des">
-					<span>appetizer</span>
 					<h5>Bắnh Patê Sô</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -97,13 +111,17 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$3</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart2"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 			<div class="pro">
 				<img src="img/food/thitnuong.jpg" alt="">
 				<div class="des">
-					<span>appetizer</span>
 					<h5>Thịt Nướng</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -113,13 +131,17 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$3</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart3"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 			<div class="pro">
 				<img src="img/food/cha ca.jpg" alt="">
 				<div class="des">
-					<span>appetizer</span>
 					<h5>Chả Cá</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -129,14 +151,18 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$5</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart4"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 
 			<div class="pro">
 				<img src="img/food/bunca.jpg" alt="">
 				<div class="des">
-					<span>entree</span>
 					<h5>Cá Nướng</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -146,13 +172,17 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$20</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart5"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 			<div class="pro">
 				<img src="img/food/bunthit.jpg" alt="">
 				<div class="des">
-					<span>entree</span>
 					<h5>Bún Thịt Nướng</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -162,13 +192,17 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$10</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart6"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 			<div class="pro">
 				<img src="img/food/comtam.jpg" alt="">
 				<div class="des">
-					<span>entree</span>
 					<h5>Cơm Tấm Bì Sườn Chả</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -178,13 +212,17 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$12</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart7"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 			<div class="pro">
 				<img src="img/food/cuon.jpg" alt="">
 				<div class="des">
-					<span>entree</span>
 					<h5>Bánh Cuốn</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -194,13 +232,17 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$10</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart8"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 			<div class="pro">
 				<img src="img/food/hutieu.jpg" alt="">
 				<div class="des">
-					<span>entree</span>
 					<h5>Hủ Tiếu</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -210,13 +252,17 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$10</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart9"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 			<div class="pro">
 				<img src="img/food/banhkot.jpg" alt="">
 				<div class="des">
-					<span>entree</span>
 					<h5>Bánh Khọt</h5>
 					<div class="star">
 						<i class="fas fa-star"></i>
@@ -226,9 +272,14 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<h4>$10</h4>
+					<select id="count" onchange="PriceChange()"> 
+						<option id="25" value="25">25 count</option>
+						<option id="50" value="40">50 count</option>
+						<option id="100" value="80">100 count</option>
+						<option id="200" value="160">200 count</option>
+					</select>
 				</div>
-				<a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-			</div>
+				<button class= "add-cart cart10"><i class="fa-solid fa-cart-shopping cart"></i></button>			</div>
 		</div>
 	</section>
 	
