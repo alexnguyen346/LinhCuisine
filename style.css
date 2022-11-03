@@ -46,6 +46,10 @@ p {
 	margin: 70px 0;
 }
 
+.footer-1{
+	padding: 70px 70px;
+}
+
 button.normal{
 	font-size: 20px;
 	font-weight: 400;
@@ -236,7 +240,7 @@ body {
 	 
 }
 #product1 .pro{
-	width: 23%;
+	width: 30%;
 	height: 50%;
 	padding: 18px 21px;
 	border: 2px solid #cce7d0; 
@@ -253,7 +257,7 @@ body {
 
 
 #product1 .pro img{
-	max-width: 300px;
+	max-width: 100%;
 	border-radius: 20px;
 	height: 300px;
 }
@@ -296,7 +300,7 @@ body {
 
 
 
-#product1 .pro .add-cart{
+#product1 .pro i{
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
@@ -520,6 +524,8 @@ footer {
 	justify-content: space-between;
 }
 
+
+
 footer .col{
 	display: flex;
 	flex-direction: column;
@@ -528,21 +534,23 @@ footer .col{
 }
 
 footer .logo{
-	margin-bottom: 52px;
+	max-height: 20%;
+	max-width: 30%;
+	margin-bottom: 40px;
 }
 
 footer h4{
-	font-size: 25px;
-	padding-bottom: 35px;
+	font-size: 18px;
+	padding-bottom: 30px;
 }
 
 footer p{
-	font-size: 23px;
+	font-size: 18px;
 	margin: 0 0 14px 0;
 }
 
 footer a{
-	font-size: 23px;
+	font-size: 18px;
 	text-decoration:none;
 	color: #222;
 	margin-bottom: 18px;
